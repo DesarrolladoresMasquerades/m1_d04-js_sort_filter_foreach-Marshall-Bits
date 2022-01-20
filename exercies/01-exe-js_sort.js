@@ -4,13 +4,13 @@
 // DO NOT mutate the original array
 const arrOfStrings = ['cat', 'wolf', 'yo', 'animal'];
 
-const longestStr = (arr) => {
-   //your code...
+const sortByLength = (el1,el2) => {
+   return el1.length - el2.length
 }
 
-let longestStrings = longestStr(arrOfStrings)
+let longestStrings = arrOfStrings.sort(sortByLength);
 console.log(longestStrings)
-
+ /*
 //ANSWER should be ['yo', 'cat', 'wolf', 'animal']
 
 //Exercise 2: Using the same arr (arrOfStrings), sort its elements alphabetically.
@@ -32,12 +32,12 @@ console.log(sortedStrings)
 // Please do not mutate the original array
 
 const people = [
-  { name: 'Candice', age: 25 },
-  { name: 'Tammy', age: 30 },
-  { name: 'Allen', age: 19 },
-  { name: 'Nettie', age: 21 },
-  { name: 'Stuart', age: 30 },
-  { name: 'Bill', age: 19 }
+   { name: 'Candice', age: 25 },
+   { name: 'Tammy', age: 30 },
+   { name: 'Allen', age: 19 },
+   { name: 'Nettie', age: 21 },
+   { name: 'Stuart', age: 30 },
+   { name: 'Bill', age: 19 }
 ];
 
 const sortByAge = (arr) => {
@@ -46,7 +46,7 @@ const sortByAge = (arr) => {
 
 let output = sortByAge(people)
 console.log(output)
- 
+
 /* ANSWER should be
  [
   { name: 'Bill', age: 19 },

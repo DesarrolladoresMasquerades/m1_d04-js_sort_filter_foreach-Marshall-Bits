@@ -9,7 +9,7 @@ let students = [
 ]
 
 //EXERCISE 1: print the name of each student
-
+c
 /* Answer should be 
    Rafa
    Elise
